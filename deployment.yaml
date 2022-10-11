@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: us-central1-docker.pkg.dev/cloudside-academy/ci-cd-repo/nginx-setup:${{github.sha}}
+        image: us-central1-docker.pkg.dev/cloudside-academy/ci-cd-repo/nginx-setup:${{github.sha::7}}
         ports:
         - containerPort: 80
