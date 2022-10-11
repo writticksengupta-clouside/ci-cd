@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: us-central1-docker.pkg.dev/cloudside-academy/ci-cd-repo/nginx-setup:${git_com}
+          image: us-central1-docker.pkg.dev/cloudside-academy/ci-cd-repo/nginx-setup:$(git_com)
           ports:
           - containerPort: 80
